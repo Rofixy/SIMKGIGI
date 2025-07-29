@@ -1,66 +1,117 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SimKGIGI - Sistem Informasi Manajemen Klinik Gigi
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Rofixy/SIMKGIGI)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+SimKGigi is a comprehensive, web-based information system designed to streamline the management of dental clinics. Built with the Laravel framework, this application provides a robust platform for handling patient data, appointments, medical records, inventory, and administrative tasks.
 
-## About Laravel
+The system is designed with a role-based access control system, catering to the specific needs of administrators, doctors, and patients.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Core Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### For Patients
+- **User Registration:** New patients can register and create an account.
+- **Profile Management:** Patients can view and update their personal information.
+- **Appointment Booking:** Search for doctors and book appointments based on available schedules.
+- **View Medical History:** Access their past visit records and treatment history.
+- **Payment Tracking:** View transaction history and payment status.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### For Doctors
+- **Personalized Dashboard:** A dedicated dashboard to view daily schedules and key metrics.
+- **Schedule Management:** Doctors can create, update, and delete their own practice schedules.
+- **Patient Anamnesis:** Input and manage patient consultation data, including complaints, examinations, diagnoses, and prescribed treatments (anamnesa).
+- **View Patient Data:** Access the profiles and medical histories of their patients.
 
-## Learning Laravel
+### For Administrators
+- **Centralized Dashboard:** An overview of key clinic metrics, including total users and doctors.
+- **User Management:** Full CRUD (Create, Read, Update, Delete) functionality for all user accounts (admins, doctors).
+- **Doctor Management:** Add, edit, and manage doctor profiles, specializations, and photos.
+- **Patient Management:** Access and manage all patient records.
+- **Inventory Control:** Manage the clinic's medicine and supply inventory (data obat).
+- **Financial Management:** Track all clinic transactions and view transaction details.
+- **Reporting System:** Generate various reports for clinic management.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Technology Stack
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Backend:** PHP 8.1+, Laravel 10
+- **Frontend:** Bootstrap 5, SASS, Vite
+- **Database:** MySQL
+- **Authentication:** Laravel UI, Laravel Sanctum
+- **Roles & Permissions:** Spatie Laravel Permission
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Getting Started
 
-## Laravel Sponsors
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Prerequisites
 
-### Premium Partners
+- PHP >= 8.1
+- Composer
+- Node.js & NPM
+- A database server (e.g., MySQL)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Installation
 
-## Contributing
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/rofixy/simkgigi.git
+    cd simkgigi
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2.  **Install PHP dependencies:**
+    ```sh
+    composer install
+    ```
 
-## Code of Conduct
+3.  **Create your environment file:**
+    ```sh
+    cp .env.example .env
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4.  **Generate an application key:**
+    ```sh
+    php artisan key:generate
+    ```
 
-## Security Vulnerabilities
+5.  **Configure your database:**
+    Open the `.env` file and set your database connection details (DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=simkgigi
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6.  **Run the database migrations:**
+    This will create all the necessary tables in your database.
+    ```sh
+    php artisan migrate
+    ```
 
-## License
+7.  **Create the storage link:**
+    ```sh
+    php artisan storage:link
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8.  **Install frontend dependencies:**
+    ```sh
+    npm install
+    ```
+
+9.  **Build frontend assets:**
+    ```sh
+    npm run build
+    ```
+
+10. **Run the development server:**
+    ```sh
+    php artisan serve
+    ```
+    The application will be available at `http://127.0.0.1:8000`.
+
+## Usage
+
+The application features three main user roles: **Admin**, **Dokter** (Doctor), and **Pengguna** (Patient).
+
+-   **Patient:** You can create a patient account by using the registration form.
+-   **Admin & Doctor:** These roles must be assigned by an existing administrator. After installing the application, you can create a user through registration and then manually change their `role` in the `users` table in your database from `pengguna` to `admin` or `dokter` to access the respective dashboards and features.
