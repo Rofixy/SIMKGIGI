@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use App\Models\Dokter;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 
-class DashBoardAdminController extends Controller
+class DashboardAdminController extends Controller
 {
-    /**
-     * Tampilkan halaman dashboard admin.
-     */
     public function index()
     {
-        return view('dashboard_admin.index');
+        $userCount = User::count();
+        $dokterCount = Dokter::count();
+        // tambahkan variabel lain jika dibutuhkan
+
+        return view('dashboard_admin.index', compact('userCount', 'dokterCount'));
     }
 }

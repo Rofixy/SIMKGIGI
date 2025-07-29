@@ -374,7 +374,7 @@
         </div>
         
         <footer class="footer">
-            <p>&copy; 2024 SimKGigi - Teknologi Terdepan untuk Praktik Terbaik | v2.0.0</p>
+            <p>&copy; 2025 SimKGigi - Teknologi Terdepan untuk Praktik Terbaik | v2.0.0</p>
         </footer>
     </div>
 </body>

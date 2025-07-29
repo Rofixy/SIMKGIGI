@@ -423,7 +423,7 @@
                             <div class="menu-section">
                                 <div class="menu-section-title">Dashboard</div>
                                 <!-- Dashboard Admin -->
-                                <a href="/admin-dashboard" class="menu-item">
+                                <a href="/home-admin" class="menu-item">
                                     <i class="bi bi-speedometer2"></i>
                                     <span>Dashboard Admin</span>
                                 </a>
@@ -447,7 +447,7 @@
                                 <i class="bi bi-calendar2-week"></i>
                                 <span>Jadwal Praktik</span>
                             </a>
-                            <a href="/data-pasien" class="menu-item">
+                            <a href="/pasien.index" class="menu-item">
                                 <i class="bi bi-person-lines-fill"></i>
                                 <span>Data Pasien</span>
                             </a>
@@ -474,10 +474,6 @@
                             <a href="/pelaporan" class="menu-item">
                                 <i class="bi bi-clipboard-data"></i>
                                 <span>Laporan</span>
-                            </a>
-                            <a href="/pengaturan" class="menu-item">
-                                <i class="bi bi-gear"></i>
-                                <span>Pengaturan Sistem</span>
                             </a>
                         </div>
 
@@ -507,13 +503,9 @@
                                 <i class="bi bi-person-vcard"></i>
                                 <span>Data Pasien</span>
                             </a>
-                            <a href="/rekam-medis" class="menu-item">
+                            <a href="/anamnesa" class="menu-item">
                                 <i class="bi bi-file-earmark-medical"></i>
-                                <span>Rekam Medis</span>
-                            </a>
-                            <a href="/perawatan" class="menu-item">
-                                <i class="bi bi-bandaid"></i>
-                                <span>Perawatan Gigi</span>
+                                <span>Anamnesa</span>
                             </a>
                         </div>
 

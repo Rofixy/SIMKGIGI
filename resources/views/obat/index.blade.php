@@ -46,6 +46,7 @@
         </button>
     </div>
 
+    {{-- Searching --}}
     <form method="GET" class="row g-2 mb-3 align-items-center">
         <div class="col-auto">
             <label for="limit" class="col-form-label">Show</label>
@@ -110,6 +111,7 @@
         </div>
     </div>
 
+    {{-- Halaman --}}
     <div class="row mt-3">
         <div class="col-md-6">
             <div class="dataTables_info">
