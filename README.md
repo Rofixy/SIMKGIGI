@@ -1,5 +1,4 @@
 # SimKGIGI - Sistem Informasi Manajemen Klinik Gigi
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Rofixy/SIMKGIGI)
 
 SimKGigi is a comprehensive, web-based information system designed to streamline the management of dental clinics. Built with the Laravel framework, this application provides a robust platform for handling patient data, appointments, medical records, inventory, and administrative tasks.
 
@@ -115,3 +114,8 @@ The application features three main user roles: **Admin**, **Dokter** (Doctor), 
 
 -   **Patient:** You can create a patient account by using the registration form.
 -   **Admin & Doctor:** These roles must be assigned by an existing administrator. After installing the application, you can create a user through registration and then manually change their `role` in the `users` table in your database from `pengguna` to `admin` or `dokter` to access the respective dashboards and features.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
